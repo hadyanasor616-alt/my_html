@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>مدرسة المستقبل - تعليم إلكتروني</title>
+<link rel="stylesheet" href="B.css">
+</head>
+<body>
+
+<header>
+    <h1>🏫🎉 مرحباً بكم في مدرسة المستقبل! 🌟📚</h1>
+    <img src="99.png" alt="صورة المدرسة" class="school-img">
+</header>
+
+<nav>
+    <a href="#home" title="الذهاب إلى الصفحة الرئيسية">🏠 الرئيسية</a>
+    <a href="#about" title="معلومات عن المدرسة">ℹ️ عن المدرسة</a>
+    <a href="#login" title="تسجيل الدخول">🔐 تسجيل الدخول</a>
+    <a href="#schedule" title="عرض جدول الحصص">📅 جدول الحصص</a>
+    <a href="#lessons" title="المقررات الدراسية">📘 المقررات</a>
+    <a href="#quiz" title="الاختبارات">📝 الاختبارات</a>
+    <a href="#messages" title="رسائل تحفيزية">💡 رسائل تحفيزية</a>
+    <a href="#gallery" title="معرض الصور">🖼️ معرض الصور</a>
+    <a href="#contact" title="تواصل معنا">📞 تواصل معنا</a>
+</nav>
+
+<main>
+<section id="home" class="section">
+    <div class="card">
+        <h2>🎉🌈 مرحباً بكم في مدرسة المستقبل! 🌟📘</h2>
+        <p>نرحب بجميع الطلاب والمعلمين في بيئة تعليمية ممتعة ومحفزة. هدفنا تعليم حديث وممتع يساعد الطلاب على التفوق والنجاح.</p>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <div class="card">
+        <h2>ℹ️📖 عن المدرسة 🌟</h2>
+        <p>مدرسة المستقبل مؤسسة تعليمية حديثة تقدم بيئة تعليمية مبتكرة تعتمد على التكنولوجيا والتعليم الإلكتروني، وتسعى لبناء جيل واعٍ ومبدع قادر على المنافسة عالمياً.</p>
+    </div>
+</section>
+
+<section id="login" class="section">
+    <div class="card login-card">
+        <h2>🔐 تسجيل الدخول</h2>
+        <input type="text" id="username" placeholder="👤 اسم المستخدم">
+        <input type="password" id="password" placeholder="🔑 كلمة المرور">
+        <select id="role">
+            <option>طالب</option>
+            <option>معلم</option>
+            <option>إدارة</option>
+        </select>
+        <button id="loginBtn">دخول 🚀</button>
+    </div>
+</section>
+
+<section id="schedule" class="section">
+<div class="card">
+<h2>📅 جدول الحصص الأسبوعي</h2>
+<table>
+<tr><th>اليوم</th><th>8-9</th><th>9-10</th><th>10-11</th><th>11-12</th><th>12-1</th><th>1-2</th></tr>
+<tr><td>الأحد</td><td>رياضيات</td><td>علوم</td><td>لغة عربية</td><td>نشاط فني</td><td>لغة إنجليزية</td><td>رياضة</td></tr>
+<tr><td>الاثنين</td><td>لغة عربية</td><td>رياضيات</td><td>علوم</td><td>رياضة</td><td>نشاط علمي</td><td>لغة إنجليزية</td></tr>
+<tr><td>الثلاثاء</td><td>علوم</td><td>لغة عربية</td><td>رياضيات</td><td>نشاط فني</td><td>لغة إنجليزية</td><td>رياضة</td></tr>
+<tr><td>الأربعاء</td><td>رياضيات</td><td>تربية إسلامية</td><td>لغة عربية</td><td>رياضة</td><td>نشاط علمي</td><td>لغة إنجليزية</td></tr>
+<tr><td>الخميس</td><td>علوم</td><td>لغة عربية</td><td>نشاط فني</td><td>رياضيات</td><td>لغة إنجليزية</td><td>رياضة</td></tr>
+</table>
+</div>
+</section>
+
+<section id="lessons" class="section">
+<h2>📘 المقررات الدراسية</h2>
+<div class="cards-container">
+<div class="card lesson-card"><h3>➕ رياضيات</h3><p></p>عملية الجمع والطرح تعلم كيفية الجمع وطرح الاعداد الصحيحه والكسور العشرية والضرب والقسمة  </p></div>
+<div class="card lesson-card"><h3>📖 اللغة العربية</h3><p>القراءة والكتابة وتحسين مهارات القراءة الصحيحة والكتابة الصحيحة</p></p></div>
+<div class="card lesson-card"><h3>🔬 العلوم</h3><p></p> دراسة الكاينات الحيه و دراسة الحيوانات والنباتات واجهزة الجسم وفهم الظواهر الطبيعية</p></div>
+</div>
+</section>
+<section id="quiz" class="section">
+<h2>📝 الاختبارات</h2>
+<div class="exam" id="arabic-exam">
+<h3>اختبار اللغة العربية</h3>
+<button onclick="showQuiz('arabic')">عرض الاختبار</button>
+<div id="arabic-quiz"></div>
+<button onclick="submitQuiz('arabic')">إرسال الإجابات</button>
+</div>
+
+<div class="exam" id="math-exam">
+<h3>اختبار الرياضيات</h3>
+<button onclick="showQuiz('math')">عرض الاختبار</button>
+<div id="math-quiz"></div>
+<button onclick="submitQuiz('math')">إرسال الإجابات</button>
+</div>
+
+<div class="exam" id="science-exam">
+<h3>اختبار العلوم</h3>
+<button onclick="showQuiz('science')">عرض الاختبار</button>
+<div id="science-quiz"></div>
+<button onclick="submitQuiz('science')">إرسال الإجابات</button>
+</div>
+</section>
+
+<section id="messages" class="section">
+<h2>💡 رسائل تحفيزية ونصائح وارشادات 🌟📚</h2>
+<div class="cards-container">
+<div class="card" style="background:#ffe6e6;">🚀 النجاح يبدأ بخطوة صغيرة اليوم!</div>
+<div class="card" style="background:#e6f7ff;">🌈 كل يوم هو فرصة لتصبح أفضل من الأمس.</div>
+<div class="card" style="background:#e6ffe6;">💪 الإصرار والمثابرة هما مفتاح التفوق.</div>
+<div class="card" style="background:#fff0e6;">📘 تعلم شيئًا جديدًا اليوم.</div>
+<div class="card" style="background:#f9e6ff;">✨ ثق بنفسك وستصل إلى كل هدف تحلم به.</div>
+<div class="card" style="background:#ffffe6;">📝 نصائح: نظم وقتك وركز على المراجعة اليومية.</div>
+<div class="card" style="background:#e6ffff;">📚 إرشادات: استخدم مصادر متعددة للتعلم واطلب المساعدة عند الحاجة.</div>
+</div>
+</section>
+
+<section id="gallery" class="section">
+<h2>🖼️ معرض الصور</h2>
+<div class="gallery">
+<img src="99.png" alt="مدرسة 1">
+<img src="777.png" alt="مدرسة 2">
+<img src="888.png" alt="مدرسة 3">
+</div>
+</section>
+
+<section id="quicklinks" class="section">
+<h2>🔗 روابط سريعة</h2>
+<div class="cards-container">
+<div class="card"><a href="#home">🏠 الرئيسية</a></div>
+<div class="card"><a href="#about">ℹ️ عن المدرسة</a></div>
+<div class="card"><a href="#lessons">📘 المقررات</a></div>
+<div class="card"><a href="#quiz">📝 الاختبارات</a></div>
+<div class="card"><a href="#messages">💡 رسائل تحفيزية</a></div>
+<div class="card"><a href="#contact">📞 تواصل معنا</a></div>
+</div>
+</section>
+
+<section id="contact" class="section">
+<div class="card">
+<h2>📞 تواصل معنا</h2>
+<p>📍    الخرطوم السودان</p>
+<p>📧 school@email.com</p>
+<p>📱 0927001570</p>
+</div>
+</section>
+
+<footer class="footer">
+<a href="#home">🏠 الرئيسية</a>
+<a href="#about">ℹ️ عن المدرسة</a>
+<a href="#lessons">📘 المقررات</a>
+<a href="#quiz">📝 الاختبارات</a>
+<a href="#messages">💡 رسائل تحفيزية</a>
+<a href="#contact">📞 تواصل معنا</a>
+</footer>
+
+<script src="C.js"></script>
+</body>
+</html>
